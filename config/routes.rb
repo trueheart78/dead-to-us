@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
   root 'welcome#home'
-  get 'welcome/home'
-  get 'welcome/about' unless Rails.env.production?
+  get 'about', to: 'welcome#about'
 end

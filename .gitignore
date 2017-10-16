@@ -26,3 +26,6 @@
 /public/packs-test
 /elm-stuff
 /node_modules
+
+# Ignore Dotenv files
+.env
