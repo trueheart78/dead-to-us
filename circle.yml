@@ -1,0 +1,23 @@
+machine:
+  node:
+    version: v6.1.0
+  timezone:
+    America/New_York
+  environment:
+    PATH: "${PATH}:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin"
+
+dependencies:
+  pre:
+    - bundle install
+  override:
+    - yarn
+  cache_directories:
+    - ~/.cache/yarn
+
+# Customize test commands
+test:
+  override:
+    - yarn --version
+  post:
+   - case $CIRCLE_NODE_INDEX in 0) ./script/brakeman ;; esac:
+       parallel: true
