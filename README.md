@@ -1,24 +1,13 @@
-# README
+# Dead To Us
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[![CircleCI](https://circleci.com/gh/trueheart78/dead-to-us.svg?style=svg)](https://circleci.com/gh/trueheart78/dead-to-us)
 
-Things you may want to cover:
+Because when you leave, you're... _dead to us_. :heart:
 
-* Ruby version
+![dead-to-us][dead-to-us-gif]
 
-* System dependencies
+## Details
 
-* Configuration
+Rails 5.1 on Ruby 2.4.2, hosted on heroku with CircleCI integration.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+[dead-to-us-gif]: /app/assets/images/dead-to-us.gif
