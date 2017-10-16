@@ -14,11 +14,12 @@ gem 'uglifier', '>= 1.3.0'
 gem 'webpacker'
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
-gem 'rollbar' #, '~> 2.15'
+gem 'rollbar', '~> 2.15'
+gem 'oj'
 gem 'papertrail'
 
 group :production do
-    gem 'pg', '~> 0.20.0'
+  gem 'pg', '~> 0.20.0'
 end
 
 group :development, :test do
