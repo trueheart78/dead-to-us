@@ -16,6 +16,8 @@ require "sprockets/railtie"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+Dotenv::Railtie.load if Module.const_defined?('Dotenv')
+
 module DeadToUs
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
