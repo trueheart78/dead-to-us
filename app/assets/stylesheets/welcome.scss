@@ -31,12 +31,22 @@
         font-weight: bold;
         font-size: $font-size * 1.2;
         margin: 0;
+
+        .name {
+          width: 70%;
+          float: left;
+        }
+
+        .death_date {
+          text-align: right;
+          width: 28%;
+          float: left;
+        }
       }
 
-      .death_date {
-      }
 
       .epitaph {
+        margin-top: 2em;
         font-style: italic;
       }
     }

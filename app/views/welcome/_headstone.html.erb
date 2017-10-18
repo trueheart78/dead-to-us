@@ -1,9 +1,12 @@
 <div class='headstone'>
   <div class='grave'></div>
   <div class='engraving'>
-    <p class='header'><%= record.fetch :name %></p>
-    <p class='death_date'>Dead to us: <%= record.fetch :death_date %></p>
-    <p class='epitaph'><%= epitaph_intro %> <%= record.fetch :name %>, <%= record.fetch :epitaph %></p>
+    <div class='header'>
+      <div class='name'><%= record.fetch :name %></div>
+      <div class='death_date'><%= record.fetch :death_date %></div>
+      <div class='clear'></div>
+    </div>
+    <div class='epitaph'><%= epitaph record %></div>
   </div>
   <div class='clear'></div>
 </div>
