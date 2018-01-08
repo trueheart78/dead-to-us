@@ -16,13 +16,13 @@ To add a fresh new icon, visit [Emojipedia][emojipedia], and look for something 
 
 ### Association Logic
 
-If someone has left the company, they should be assigned a `:coffin`. If they have simply gone to another team, then they should be assigned a `:ghost`. If they are promoted within the same vertical (meaning they are in your chain-of-command), then they are considered a `:vampire_boy` or `:vampire_girl`. For those on retainer (like myself), `:zombie_boy` or `:zombie_girl` is preferred.
+If someone has left the company, they should be assigned a `:coffin`. If they have simply gone to another team, then they should be assigned a `:ghost`. If they are promoted within the same vertical (meaning they are in your chain-of-command), then they are considered a `:vampire_boy` or `:vampire_girl`. For those on retainer (like myself), `:zombie_boy` or `:zombie_girl` is preferred. `:skull` was the classic icon, and is still available, for times where the prior logic doesn't apply.
 
 ### Supported Icons
 
 Supported:
 
-* `:ghost` (deafult)
+* `:ghost` (default)
   * ![ghost][ghost]
 * `:coffin`
   * ![coffin][coffin]
