@@ -14,7 +14,7 @@
   width: 720px;
 
   .headstone {
-    background-color: #DDD;
+    background-color: #B6B6B6;
     width: 100%;
     margin-bottom: 8px;
     margin-top: 8px;
@@ -86,6 +86,20 @@
 
     .grave-zombie {
       @extend .grave-zombie_girl;
+    }
+    
+    .grave-vampire_boy {
+      @extend .grave-default;
+      background-image: image-url('vampire-boy.png');
+    }
+
+    .grave-vampire_girl {
+      @extend .grave-default;
+      background-image: image-url('vampire-girl.png');
+    }
+
+    .grave-vampire {
+      @extend .grave-vampire_girl;
     }
   }
 }
