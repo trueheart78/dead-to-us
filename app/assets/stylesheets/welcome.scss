@@ -51,13 +51,41 @@
       }
     }
 
-    .grave {
+    .grave-default {
       float: left;
       width: 120px;
       height: 120px;
       margin-right: 20px;
-      background-image: image-url('skull.png');
       background-repeat: no-repeat;
+      background-image: image-url('skull.png');
+    }
+
+    .grave-skull {
+      @extend .grave-default;
+    }
+
+    .grave-coffin {
+      @extend .grave-default;
+      background-image: image-url('coffin.png');
+    }
+
+    .grave-ghost {
+      @extend .grave-default;
+      background-image: image-url('ghost.png');
+    }
+
+    .grave-zombie_boy {
+      @extend .grave-default;
+      background-image: image-url('zombie-boy.png');
+    }
+
+    .grave-zombie_girl {
+      @extend .grave-default;
+      background-image: image-url('zombie-girl.png');
+    }
+
+    .grave-zombie {
+      @extend .grave-zombie_girl;
     }
   }
 }
