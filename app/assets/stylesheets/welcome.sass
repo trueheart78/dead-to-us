@@ -1,0 +1,81 @@
+.about
+  margin: auto
+
+.cemetery
+  margin: 0 auto
+  text-align: center
+  width: 720px
+
+  .headstone
+    width: 100%
+    margin-bottom: 8px
+    margin-top: 8px
+    padding: 5px
+
+    .engraving
+      float: right
+      text-align: left
+      width: 580px
+      vertical-align: top
+      border: 0px red solid
+
+      .header
+        .name
+          width: 70%
+          float: left
+
+          h1
+            margin: 0
+
+        .death_date
+          text-align: right
+          width: 28%
+          float: left
+
+      .epitaph
+        margin-top: 2em
+        font-style: italic
+
+    .grave-default
+      float: left
+      width: 120px
+      height: 120px
+      margin-right: 20px
+      background-repeat: no-repeat
+      background-image: image-url('ghost.png')
+
+    .grave-ghost
+      @extend .grave-default
+
+    .grave-coffin
+      @extend .grave-default
+      background-image: image-url('coffin.png')
+
+    .grave-skull
+      @extend .grave-default
+      background-image: image-url('skull.png')
+
+    .grave-zombie_boy
+      @extend .grave-default
+      background-image: image-url('zombie-boy.png')
+
+    .grave-zombie_girl
+      @extend .grave-default
+      background-image: image-url('zombie-girl.png')
+
+    .grave-zombie
+      @extend .grave-zombie_girl
+
+    .grave-vampire_boy
+      @extend .grave-default
+      background-image: image-url('vampire-boy.png')
+
+    .grave-vampire_girl
+      @extend .grave-default
+      background-image: image-url('vampire-girl.png')
+
+    .grave-vampire
+      @extend .grave-vampire_girl
+
+.clear
+  clear: both
