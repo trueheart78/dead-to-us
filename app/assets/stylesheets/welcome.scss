@@ -1,26 +1,105 @@
 // Place all the styles related to the Welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'layout';
 
 .about {
   margin: auto;
 }
 
 .cemetery {
-  margin: auto;
+  font-family: Times New Roman;
+  margin: 0 auto;
   text-align: center;
-  width: 480px;
+  width: 720px;
 
   .headstone {
-    float: left;
+    background-color: #B6B6B6;
+    width: 100%;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    padding: 5px;
 
-    .grave {
+    .engraving {
+      float: right;
+      text-align: left;
+      width: 580px;
+      vertical-align: top;
+      border: 0px red solid;
+
+      .header {
+        font-weight: bold;
+        font-size: $font-size * 1.2;
+        margin: 0;
+
+        .name {
+          width: 70%;
+          float: left;
+        }
+
+        .death_date {
+          text-align: right;
+          width: 28%;
+          float: left;
+        }
+      }
+
+
+      .epitaph {
+        margin-top: 2em;
+        font-style: italic;
+      }
+    }
+
+    .grave-default {
+      float: left;
       width: 120px;
       height: 120px;
-      margin-left: 20px;
       margin-right: 20px;
-      background-image: image-url('skull.png');
       background-repeat: no-repeat;
+      background-image: image-url('skull.png');
+    }
+
+    .grave-skull {
+      @extend .grave-default;
+    }
+
+    .grave-coffin {
+      @extend .grave-default;
+      background-image: image-url('coffin.png');
+    }
+
+    .grave-ghost {
+      @extend .grave-default;
+      background-image: image-url('ghost.png');
+    }
+
+    .grave-zombie_boy {
+      @extend .grave-default;
+      background-image: image-url('zombie-boy.png');
+    }
+
+    .grave-zombie_girl {
+      @extend .grave-default;
+      background-image: image-url('zombie-girl.png');
+    }
+
+    .grave-zombie {
+      @extend .grave-zombie_girl;
+    }
+    
+    .grave-vampire_boy {
+      @extend .grave-default;
+      background-image: image-url('vampire-boy.png');
+    }
+
+    .grave-vampire_girl {
+      @extend .grave-default;
+      background-image: image-url('vampire-girl.png');
+    }
+
+    .grave-vampire {
+      @extend .grave-vampire_girl;
     }
   }
 }

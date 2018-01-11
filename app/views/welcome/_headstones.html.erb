@@ -1,4 +1,3 @@
-<% names.each do |name| %>
-  <%= render partial: 'headstone', locals: { name: name } %>
+<% records.each do |record| %>
+  <%= render partial: 'headstone', locals: { record: record } %>
 <% end %>
-<div class='clear'></div>
