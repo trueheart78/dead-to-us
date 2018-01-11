@@ -2,13 +2,11 @@ module Concerns::Theme
   attr_accessor :theme
 
   def detect_theme
-    @theme = params[:theme] || theme_cookie || 'classic'
+    @theme = params[:theme] || theme_cookie || 'spooky'
     store_cookie
   end
 
   private
-
-  THEMES = %i(classic spooky).freeze
 
   def theme_cookie
     cookies.permanent[:theme] if cookies.permanent[:theme].present?
