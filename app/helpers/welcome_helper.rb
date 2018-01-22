@@ -7,7 +7,7 @@ module WelcomeHelper
     [
       'Goodbye',
       'Farewell',
-      'So long',
+      'So long'
     ].sample
   end
 
