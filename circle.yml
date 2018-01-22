@@ -21,3 +21,10 @@ test:
   post:
    - case $CIRCLE_NODE_INDEX in 0) ./script/brakeman ;; esac:
        parallel: true
+
+# Deploy it to heroku automatically
+deployment:
+  production:
+    branch: master
+    heroku:
+      appname: deadtous
